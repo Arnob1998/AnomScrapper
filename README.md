@@ -1,6 +1,7 @@
 # AnomScrapper
 Parse information from high security websites and even automate the process
 
+
 ## Installation
 
 Pip installation
@@ -66,11 +67,13 @@ You just have to run the code below after you already ran the first two cells.
 Then add your own JS code that parses information from your desired website
 
 	driver.execute_script('''
-
 	//your JS code goes here
-
-    ''')
+	  ''')
 
 *Note: driver.execute_script function can return the output of your JS code. But to return the output, you have to use return in your JS code. (follow my example from cell: 3 method: parse_review_page)* 
 
 Since this in Jupyter notebook. The application won't close if you made mistakes in your code. With a few trails and error, you can easily automate parsing for your website.
+
+### Note 
+
+If the website propmts you with capcha. Just complete it and then use driver.execute_script
